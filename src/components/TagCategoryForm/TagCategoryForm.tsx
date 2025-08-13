@@ -15,6 +15,7 @@ const schema = z.object({
   precisionType: z.enum(["LONG", "SHORT", "MEDIUM"]),
   groupLabel: z.string().min(1, "Group label is required"),
   groupValue: z.string().min(1, "Group value is required"),
+  metadata: z.record(z.string(), z.any()), // 👈 add this to schema
 });
 
 export type FormValues = z.infer<typeof schema> & {
