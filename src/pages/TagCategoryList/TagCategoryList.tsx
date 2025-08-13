@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from "react";
 import styles from "./TagCategoryList.module.scss";
 import { useTagCategories } from "@/hooks/useTagCategories";
-import TagCategoryCard from "@/components/TagCategoryCard/TagCategoryCard";
-import TagCategoryForm from "@/components/TagCategoryForm/TagCategoryForm";
-import DeleteConfirmationModal from "@/components/DeleteConfirmationModal/DeleteConfirmationModal";
 import type { ITagCategory } from "@/types/interfaces";
+import TagCategoryForm from "@/components/TagCategoryForm/TagCategoryForm";
+import TagCategoryCard from "@/components/TagCategoryCard/TagCategoryCard";
+import DeleteConfirmationModal from "@/components/DeleteConfirmationModal/DeleteConfirmationModal";
 
 export default function TagCategoryList() {
   const {
