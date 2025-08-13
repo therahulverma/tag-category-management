@@ -1,0 +1,22 @@
+@import "@/styles/globals.scss";
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 50;
+}
+.modal {
+  @extend .panel !optional;
+  padding: 18px;
+  width: min(480px, 92vw);
+  display: grid;
+  gap: 12px;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}

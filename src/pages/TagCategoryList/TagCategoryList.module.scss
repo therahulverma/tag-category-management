@@ -1,0 +1,19 @@
+@import "@/styles/globals.scss";
+.wrap {
+  display: grid;
+  gap: 16px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.controls {
+  @extend .panel !optional;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

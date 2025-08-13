@@ -1,0 +1,35 @@
+@import "@/styles/globals.scss";
+.form {
+  @extend .panel !optional;
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+.field {
+  display: grid;
+  gap: 6px;
+}
+.label {
+  color: var(--muted);
+  font-size: 12px;
+}
+.help {
+  color: var(--muted);
+  font-size: 12px;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.subPanel {
+  @extend .panel !optional;
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
